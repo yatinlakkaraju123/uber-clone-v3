@@ -6,7 +6,7 @@ export default function customer() {
   return (
     <div>
       <DriverNavbar/>
-      
+      <ViewRide/>
       
     </div>
   )

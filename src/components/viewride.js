@@ -72,31 +72,14 @@ class App extends Component {
                             </div>
                         ))}
                     </div>
-                    <div>
-                        <h4>Accept array</h4>
-                        <div className="card-deck">
-                        {accepted_ride_array.map((item, index) => (
-                            <div className="card" key={index}>
-                                <div className="card-body">
-                                    <h5 className="card-title">{item.name}</h5>
-                                    <p className="card-text">from address: {item.from_address}</p>
-                                    <p className="card-text">to address: {item.to_address}</p>
-                                    <p className="card-text"> name: {item.name}</p>
-                                    <p className="card-text">date: {item.date}</p>
-                                    <p className="card-text">time: {item.time}</p>
-                                    <p className="card-text">time: {item.driver_name}</p>
-                                    
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                   
                         
                     </div>
 
 
 
                 </div>
-            </div>
+            
 
 
 
