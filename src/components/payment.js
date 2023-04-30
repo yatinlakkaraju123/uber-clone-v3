@@ -17,8 +17,8 @@ class App extends Component {
         const scontract = new web3.eth.Contract(ABI, contract)
         this.setState({ scontract} )
         const data = await scontract.methods.get_accept_ride_array().call();
-       // const a = []
-       /* console.log(data);
+        const a = []
+        console.log(data);
         for(let i=0;i<data.length;i++)
         {
             if(data[i].isPayed==false)
@@ -29,15 +29,15 @@ class App extends Component {
         
         console.log("pushed data",a);
         this.setState({ accepted_ride_array: a });
-        this.setState({list_ride_array:data});*/
-        const a = data.filter(item => !item.isPayed);
+        this.setState({list_ride_array:data});
+       // const a = data.filter(item => !item.isPayed);
     
         this.setState({
             web3: web3,
             account: accounts[0],
             scontract: scontract,
             list_ride_array: data,
-            accepted_ride_array: a
+           
         });
 
     }
@@ -46,8 +46,7 @@ class App extends Component {
         const ride_no = rideID;
         const pay_array = list_ride_array[ride_no];
         const p = pay_array.price;
-        if (!pay_array.isPayed)
-        {
+       
             try{
                 const tx =  await scontract.methods.pay_driver(ride_no).send({from:account,value:web3.utils.toWei('1', 'ether')});
                 console.log(tx);
@@ -59,11 +58,8 @@ class App extends Component {
             catch(er){
                 console.log(er);
             }
-        }
-        else
-        {
-            console.log("already paid");
-        }
+        
+        
         
        
      
