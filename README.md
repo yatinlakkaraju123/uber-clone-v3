@@ -36,6 +36,10 @@ Insight
 
 Pictures:
 
-![Screenshot 2023-04-29 180606](https://user-images.githubusercontent.com/96581782/235303129-00ebcd9d-19a4-4117-8825-447b7aed3297.png)
+![1 1](https://user-images.githubusercontent.com/96581782/235339289-9ecad726-602b-43c5-9d77-4f15da532c3b.png)
+![1 2](https://user-images.githubusercontent.com/96581782/235339294-d38d3ace-e95f-429f-b8ee-b01e7d2b83ff.png)
+![1 4](https://user-images.githubusercontent.com/96581782/235339307-067b5abb-cdf6-438d-a589-ec5835f11aed.png)
+![1 5](https://user-images.githubusercontent.com/96581782/235339314-5483d176-0928-4244-899f-485c5b6c9733.png)
+
 
 
