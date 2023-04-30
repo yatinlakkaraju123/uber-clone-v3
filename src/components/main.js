@@ -64,10 +64,12 @@ class App extends Component {
             <div className='container-sm' class="items-center flex justify-center h-screen">
                 <form>
                 <div class="justify-center items center flex">
-                    <h3>REGISTER</h3></div>
-                   
-                    <button  className="btn btn-success"  onClick={() => this.registerCustomer()}>Register as Customer</button>
+                    <h3 className='text-center'style={{margindown: '100px'}}>REGISTER</h3></div>
+                    <div className='text-center'>
+                    <button  className="btn btn-success "  onClick={() => this.registerCustomer()}style={{marginRight: '40px'}}>Register as Customer</button>
                     <button  className="btn btn-success" onClick={() => this.registerDriver()}>Register as Driver</button>
+                    </div>
+                   
                 </form>
 
             </div>

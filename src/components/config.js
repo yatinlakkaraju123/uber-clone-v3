@@ -153,6 +153,11 @@ export const ABI = [
         "internalType": "address",
         "name": "customer",
         "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "isAccepted",
+        "type": "bool"
       }
     ],
     "stateMutability": "view",
@@ -298,6 +303,11 @@ export const ABI = [
             "internalType": "address",
             "name": "customer",
             "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "isAccepted",
+            "type": "bool"
           }
         ],
         "internalType": "struct carpool.Ride[]",
@@ -413,4 +423,4 @@ export const ABI = [
     "payable": true
   }
 ];
-export const contract ='0xabe77CB5f99f847419addA895F1De529348ef1a2' ;
+export const contract ='0x771Fe04C8691fc2289a48c2e362312Ea79514418' ;
