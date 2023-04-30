@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+Cabs on Go
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+About  
 
-## Available Scripts
+The web application Cabs on Go is built to solve the problem of middlemen in cab service apps by using blockchain technology by creating a decentralized application which allows the customer to directly book a cab without having the need of a middleman which results in increased profitability for the driver as well as the customer.
+ 
+The app uses the Ethereum blockchain to manage transactions between users. Th!
+is is done using smart contracts written in Solidity, which would be deployed on the blockchain. 
 
-In the project directory, you can run:
+The smart contracts would manage the transfer of funds between users and ensure that the cab booking transactions are executed correctly.
 
-### `npm start`
+Insight
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+•	It is a D-app on Ethereum.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+•	Smart contract is there in Backend.
 
-### `npm test`
+•	Front-end is made with React.Js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+•	We are using Metamask Browser Extension to connect to the Ethereum Network.
 
-### `npm run build`
+•	We use Ganache as the Ethereum network for testing purposes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+•	In the app we can register as a Driver or Customer.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+•	The flow for a Driver is:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ 1) They can see the ride a customer has requested from pickup point to drop point.
+ 2) After the Driver accepts the ride he reaches the pick up point.
+ 3) At the end of the ride the driver receives the payment from the customer.
 
-### `npm run eject`
+•	The flow for the Customer is:
+ 1)	The customer enters the From and To location on the app.
+ 2)	After entering this information if a driver accepts the ride the customer is shown the details about the same.
+ 3)	Once the ride finishes the customer pays the driver directly.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Pictures:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![1 1](https://user-images.githubusercontent.com/96581782/235339289-9ecad726-602b-43c5-9d77-4f15da532c3b.png)
+![1 2](https://user-images.githubusercontent.com/96581782/235339294-d38d3ace-e95f-429f-b8ee-b01e7d2b83ff.png)
+![1 4](https://user-images.githubusercontent.com/96581782/235339307-067b5abb-cdf6-438d-a589-ec5835f11aed.png)
+![1 5](https://user-images.githubusercontent.com/96581782/235339314-5483d176-0928-4244-899f-485c5b6c9733.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
