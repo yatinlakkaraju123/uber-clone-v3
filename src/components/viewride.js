@@ -44,7 +44,7 @@ class App extends Component {
         this.setState({ accepted_ride_array: a_rides });
 
     }
-
+    
 
 
     render() {
