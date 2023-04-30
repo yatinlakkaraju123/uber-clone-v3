@@ -37,7 +37,7 @@ class App extends Component {
         const { scontract } = this.state;
         const ride_no = rideId.index;
         const name = 'yatin';
-        const price = '123';
+        const price = '45';
         scontract.methods.accept_ride(ride_no, name, price).send({ from: this.state.account });
         const a_rides = await scontract.methods.get_accept_ride_array().call();
         console.log(a_rides);
@@ -67,7 +67,7 @@ class App extends Component {
                                     <p className="card-text"> name: {item.name}</p>
                                     <p className="card-text">date: {item.date}</p>
                                     <p className="card-text">time: {item.time}</p>
-                                    <button type="button" class="btn btn-success" onClick={() => this.acceptRide({ index })}>Submit</button>
+                                    <button type="button" class="btn btn-success" onClick={() => this.acceptRide({ index })}>Accept Ride</button>
                                 </div>
                             </div>
                         ))}

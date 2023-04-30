@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import Web3 from 'web3'
 import { ABI, contract } from './config.js'
 import RequestRide from './requestride'
-
+import Payment from './payment.js'
 class App extends Component {
   componentWillMount() {
     this.loadBlockchainData();
@@ -21,6 +21,9 @@ class App extends Component {
   }
   async viewRide() {
     this.setState({ view: '1' })
+  }
+  async payRide(){
+    this.setState({view:'2'})
   }
 
   constructor(props) {
@@ -50,14 +53,16 @@ class App extends Component {
              
               <button type="button" class="btn btn-success" onClick={() => this.viewRide()}>Request Ride</button>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Payment</a>
-              </li>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <li class="nav-item">
+              <button type="button" class="btn btn-success" onClick={() => this.payRide()}>Payment Ride</button>
+              </li></ul>
+              
             </ul>
           </div>
         </div>
       </nav>
       {view == '1' &&  <RequestRide/>}
+      {view == '2' &&  <Payment/>}
         
           
         </div>

@@ -160,6 +160,11 @@ export const ABI = [
     "constant": true
   },
   {
+    "stateMutability": "payable",
+    "type": "receive",
+    "payable": true
+  },
+  {
     "inputs": [],
     "name": "register_customer",
     "outputs": [],
@@ -408,4 +413,4 @@ export const ABI = [
     "payable": true
   }
 ];
-export const contract ='0xD70f053838463200b5F9010021f24e6d6Aa34e35' ;
+export const contract ='0xabe77CB5f99f847419addA895F1De529348ef1a2' ;

@@ -2,14 +2,10 @@ import React, { Component } from 'react'
 import Web3 from 'web3'
 import { ABI, contract } from './config.js'
 
-import CustomerNavbar from './customer_navbar.js'
-import DriverNavbar from './driver_navbar.js'
-import RequestRide from './requestride'
-import ViewRide from './viewride'
 import Main from './main.js'
 import Customer from './customer.js'
 import Driver from './driver.js'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 class App extends Component {
     componentWillMount() {
         this.loadBlockchainData();
@@ -27,7 +23,7 @@ class App extends Component {
 
     }
     async driver_or_register(){
-        const {account,scontract} = this.state;
+        const {account,scontract,role} = this.state;
         const c = await scontract.methods.get_customer_array().call();
         const found_customer = c.find(element=>element.user == account);
         const d = await scontract.methods.get_driver_array().call();
@@ -44,6 +40,7 @@ class App extends Component {
         {
             this.setState({role:-'1'})
         }
+        console.log(role);
         
     }
     async see_role()
@@ -65,6 +62,7 @@ class App extends Component {
                 <>
                 {role=='0' && <Customer/>}
                 {role=='1' && <Driver/>}
+                {role=='-1' && <Main/>}
                 </>
             );
         }
